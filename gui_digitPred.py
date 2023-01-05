@@ -24,6 +24,7 @@ def Draw(event):
     img[y-2:y+2,x-2:x+2,0] = 255.0
 
 def predict(img):
+    
     img = preprocessing(img)
     val , label = model.predict(img)
 
